@@ -1,0 +1,33 @@
+# --- Core Deep Learning Framework ---
+# PyTorch with CUDA 12 support (Install via pip/wheel on Arch)
+torch>=2.2.0
+torchvision
+torchaudio
+
+# --- HuggingFace Infrastructure & Models ---
+# Pinned to stable, co-compatible versions for SDXL
+transformers>=4.38.0,<5.0.0
+diffusers>=0.27.0,<0.32.0
+huggingface-hub>=0.21.0
+safetensors>=0.4.0
+accelerate>=0.27.0
+
+# --- Compel & Tokenizer Utilities ---
+# Version 2.2.0+ includes native CompelForSDXL and fixes Transformers 4.x compatibility
+compel>=2.2.0
+
+# --- Speed Optimization & Compiler Backends ---
+# Essential for torch.compile on Arch Linux!
+triton>=2.2.0
+peft>=0.9.0
+
+# --- Optional Utilities ---
+protobuf
+sentencepiece
+
+# --- Upscaler related ---
+pillow
+numpy
+opencv-python
+realesrgan
+basicsr
